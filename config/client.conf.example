@@ -1,0 +1,29 @@
+# Client Configuration Example
+
+# VPN Client Settings
+
+## Connection
+server_address = 192.168.1.100
+server_port = 51820
+server_public_key = <server's public key here>
+
+## Client Identity
+private_key = /etc/wireguard-vpn/client_key
+public_key = <your public key here>
+client_address = 10.0.0.2/32
+
+## Network
+dns_servers = 8.8.8.8, 8.8.4.4
+allowed_ips = 0.0.0.0/0
+
+## Performance
+persistent_keepalive = 25
+rekey_interval = 120
+
+## Logging
+log_level = info
+log_file = /var/log/wireguard-vpn/client.log
+
+## Optional: Routes
+# route 10.0.0.0/8 via tun0
+# route 192.168.0.0/16 via tun0
