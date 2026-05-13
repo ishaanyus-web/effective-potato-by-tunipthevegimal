@@ -1,0 +1,27 @@
+.github/
+*.o
+*.a
+*.so
+build/
+bin/
+obj/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.dSYM/
+
+# Test outputs
+test_results.txt
+coverage_report/
+
+# Keys and secrets
+/tmp/vpn_key
+*.key
+*.conf
+
+# Logs
+*.log
+logs/
